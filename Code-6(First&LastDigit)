@@ -1,0 +1,33 @@
+//Program to find the first and last digit of the number
+
+#include <stdio.h>
+#include <math.h>
+
+void main()
+{
+    int n,count=0,m,first,i,rem;
+
+    //Input number from user
+    printf("Enter the number here: ");
+    scanf("%d",&n);
+
+    m=n;
+
+    //Counting the number of digits
+    while(m!=0)
+    {
+        m=m/10;
+        count++;
+    }
+
+    //Finding the first digit 
+    first=n/pow(10,count-1);
+    printf("The first digit of the entered number is %d\n",first);
+
+    //Finding the last digit
+    for (i=1;i<=count-1;i++)
+    {
+        rem=n%10;
+    }
+    printf("The last digit of the entered number is %d\n",rem);
+}
