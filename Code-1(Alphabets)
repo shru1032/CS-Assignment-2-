@@ -1,0 +1,14 @@
+//Program to print alphabets from a to z
+
+#include <stdio.h>
+
+void main()
+{
+    char ch;
+    printf("Alphabets fro a to z are:\n");
+    
+    for (ch='a';ch<='z';ch++)
+    {
+        printf(" %c ",ch);
+    }
+}
