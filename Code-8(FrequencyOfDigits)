@@ -1,0 +1,38 @@
+// Program to find the frequency of each digit in a number
+
+#include <stdio.h>
+
+void main()
+{
+    long long num,n;
+    int i,rem,freq[10];
+    
+    //Input number from the user
+    printf("Enter a number here:");
+    scanf("%lld", &num);
+    
+    //Initalizing the values of array elements as zero
+    for (i=0;i<=9;i++)
+    {
+        freq[i]=0;
+    }
+    
+    n=num;
+    
+    //Traversing the digits of the entered number
+    while(n!=0)
+    {
+        rem=n%10;
+        freq[rem]++;
+        n=n/10;
+    }
+    
+    printf("The number of times each digit occurs in %lld are:\n",num);
+    
+    //Printing the frequency of each digit in the entered number
+    for(i=0;i<=9;i++)
+    {
+        printf("The number of times %d occurs in %lld is:%d\n",i,num,freq[i]);
+    }
+    
+}
