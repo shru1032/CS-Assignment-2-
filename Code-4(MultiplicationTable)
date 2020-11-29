@@ -1,0 +1,17 @@
+//Program to print multiplication table of a number
+
+#include <stdio.h>
+
+void main()
+{
+    int i,n,N;
+    printf("Enter the number here:");
+    scanf("%d",&n);
+    printf("Enter the number of terms upto which you want to print the multiplication table of %d :",n);
+    scanf("%d",&N);
+    printf("The multiplication table of %d upto %d terms is as follows:\n",n,N);
+    for (i=1;i<=N;i++)
+    {
+        printf("%d X %d = %d\n",n,i,n*i);
+    }
+}
